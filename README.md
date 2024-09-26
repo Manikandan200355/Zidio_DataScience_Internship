@@ -35,12 +35,14 @@ bash
 Copy code
 python train.py**
 
-### Testing the Model: To evaluate the model on test data:
+### Testing the Model: 
+#### To evaluate the model on test data:
 **bash
 Copy code
 python test.py**
 
-### Making Predictions: You can predict emotions in a speech file using the trained model:
+### Making Predictions:
+#### You can predict emotions in a speech file using the trained model:
 **bash
 Copy code
 python predict.py --file path_to_audio_file.wav**
