@@ -15,7 +15,7 @@ Model: Classification model for emotion recognition in speech.**
 #### Clone the repository:
 **bash
 Copy code
-git clone https://github.com/Manikandan200355/speech-emotion-recognition.git
+git clone https://github.com/Manikandan200355/Zidio_DataScience_Internship.git
 cd speech-emotion-recognition**
 
 ### Create a virtual environment (optional but recommended):
