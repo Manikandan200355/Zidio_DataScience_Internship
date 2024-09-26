@@ -1,72 +1,88 @@
-## Speech Emotion Recognition (SER)
-### Project Overview
-**This Speech Emotion Recognition (SER) project aims to analyze audio files and predict the emotion expressed in speech. By utilizing audio features such as MFCC (Mel-frequency cepstral coefficients), this model detects and classifies emotions into categories like happy, sad, angry, etc. The model achieved 98% accuracy without hyperparameter tuning and cross-validation.**
+# Speech Emotion Recognition (SER)
 
-### Features
-**Emotion Detection: Classifies emotions in speech such as happy, sad, angry, neutral, etc.
-High Accuracy: Achieved 98% accuracy.
-Audio Processing: Utilizes MFCC and other features for emotion recognition.
-Model: Classification model for emotion recognition in speech.**
+## 📄 Project Overview
 
-### Dataset
-**This project is based on a publicly available dataset for speech emotion recognition, consisting of labeled audio files representing various emotions.**
+This **Speech Emotion Recognition (SER)** project identifies the emotional state in spoken audio using machine learning techniques. The model analyzes speech features such as MFCC (Mel-frequency cepstral coefficients) to predict emotions like happiness, sadness, anger, and more. It achieved a **98% accuracy** without hyperparameter tuning or cross-validation.
 
-### Installation
-#### Clone the repository:
-**bash
-Copy code
-git clone https://github.com/Manikandan200355/Zidio_DataScience_Internship.git
-cd speech-emotion-recognition**
+## 🧠 Features
 
-### Create a virtual environment (optional but recommended):
-**bash
-Copy code
-python -m venv env
-source env/bin/activate  # On Windows use `env\Scripts\activate`**
+- **Emotion Detection**: Recognizes emotions such as happy, sad, angry, neutral, etc.
+- **High Accuracy**: Achieved 98% accuracy using a classification model.
+- **Audio Processing**: Utilizes MFCC and other advanced features.
+- **Scalable**: Can be extended to recognize real-time emotions in speech.
 
-### Install the required dependencies:
-**bash
-Copy code
-pip install -r requirements.txt**
+## 📊 Dataset
 
-### Usage
-**Training the Model: To train the emotion recognition model, you can run the following command:
-bash
-Copy code
-python train.py**
+This project uses the Toronto Emotional Speech Set (TESS) dataset, which consists of speech recordings portraying seven emotions
+(anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral). 
+You can download the dataset from Kaggle using the link below: [Toronto Emotional Speech Set (TESS) dataset](https://www.kaggle.com/datasets/ejlok1/toronto-emotional-speech-set-tess/data)
 
-### Testing the Model: 
-#### To evaluate the model on test data:
-**bash
-Copy code
-python test.py**
+TESS Dataset on Kaggle
+## 🛠 Installation
 
-### Making Predictions:
-#### You can predict emotions in a speech file using the trained model:
-**bash
-Copy code
-python predict.py --file path_to_audio_file.wav**
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Manikandan200355/Zidio_DataScience_Internship.git
+    cd speech-emotion-recognition
+    ```
 
-### Preprocessing
-**The audio files are preprocessed by extracting MFCC features. These features help capture the essential aspects of speech signals.
-The dataset is split into training and testing sets before model training.**
+2. Set up a virtual environment (optional but recommended):
+    ```bash
+    python -m venv env
+    source env/bin/activate  # For Windows: `env\Scripts\activate`
+    ```
 
-### Model Architecture
-**A classification model (e.g., CNN, RNN, or other suitable architecture) is used for recognizing emotions.
-Features like MFCC, Chroma, and Mel-spectrograms are extracted from the audio files.**
+3. Install the necessary dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### Results
-**Accuracy: The model achieved 98% accuracy without hyperparameter tuning.
-Confusion Matrix: Displays the correct and incorrect predictions for each emotion category.**
+## 🚀 Usage
 
-### Future Work
-**Implement cross-validation and hyperparameter tuning to potentially improve accuracy.
-Extend the model to support real-time emotion recognition.
-Experiment with other deep learning architectures to boost performance.**
+### 1. Training the Model
+To train the emotion recognition model, run the following command:
+```bash
+python train.py
+```
 
-### License
-**This project is licensed under the MIT License - see the LICENSE file for details.**
+### 2. Testing the Model
+To test the model performance, run:
+```bash
+python test.py
+```
 
-### Acknowledgments
-**Special thanks to my mentor, Chandan Mishra, for guiding me through the project.
-Resources used include the Librosa library for audio processing and sklearn for model evaluation.**
+### 3. Making Predictions
+To predict the emotion of a new audio file:
+```bash
+python predict.py --file path_to_audio_file.wav
+```
+
+## 🔧 Preprocessing
+
+- **Audio Features**: Extracts MFCC, Chroma, and Mel-spectrogram features from the audio data.
+- **Data Splitting**: The dataset is divided into training and testing sets to train the model and evaluate its performance.
+
+## 🧑‍💻 Model Architecture
+
+- A classification model is used to predict emotions based on extracted audio features.
+- **Techniques Used**: MFCC, Chroma, and Mel-spectrogram for feature extraction.
+  
+## 📈 Results
+
+- **Model Accuracy**: The SER model achieved a remarkable **98% accuracy** without hyperparameter tuning.
+- **Confusion Matrix**: Detailed breakdown of prediction success and failure rates for each emotion.
+
+## 🔮 Future Enhancements
+
+- **Cross-Validation**: Implement cross-validation to optimize model performance.
+- **Real-time Emotion Recognition**: Extend functionality to detect emotions in real-time speech.
+- **Deep Learning Architectures**: Experiment with advanced architectures to further improve results.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Special thanks to my mentor **Chandan Mishra** for guidance and support.
+- Libraries: **Librosa** (for audio processing), **sklearn** (for model training and evaluation).
