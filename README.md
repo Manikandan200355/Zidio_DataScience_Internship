@@ -1,6 +1,6 @@
 ## Speech Emotion Recognition (SER)
 ### Project Overview
-** This Speech Emotion Recognition (SER) project aims to analyze audio files and predict the emotion expressed in speech. By utilizing audio features such as MFCC (Mel-frequency cepstral coefficients), this model detects and classifies emotions into categories like happy, sad, angry, etc. The model achieved 98% accuracy without hyperparameter tuning and cross-validation.**
+**This Speech Emotion Recognition (SER) project aims to analyze audio files and predict the emotion expressed in speech. By utilizing audio features such as MFCC (Mel-frequency cepstral coefficients), this model detects and classifies emotions into categories like happy, sad, angry, etc. The model achieved 98% accuracy without hyperparameter tuning and cross-validation.**
 
 ### Features
 Emotion Detection: Classifies emotions in speech such as happy, sad, angry, neutral, etc.
